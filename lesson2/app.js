@@ -1,6 +1,10 @@
-function combine(input1, input2) {
-    var res = input1 + input2;
-    return res;
+function add(num1, num2) {
+    return num1 + num2;
 }
-var combinedAges = combine(20, 25);
-console.log(combinedAges);
+function printResult(num) {
+    console.log("result: ", num);
+}
+var combinedValues;
+combinedValues = add;
+combinedValues = printResult;
+console.log(combinedValues(16, 8));

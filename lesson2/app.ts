@@ -1,19 +1,13 @@
-type Combinable = number | string;
-
-function combine(
-  input1: Combinable,
-  input2: Combinable,
-  typeConversion: "as-number" | "as-text"
-) {
-  let res;
-  if (typeof input1 === "number" && typeof input2 === "number") {
-    res = input1 + input2;
-  } else if (typeof input1 === "string" && typeof input2 === "string") {
-    res = input1 + input2;
-  }
-
-  return res;
+function add(num1: number, num2: number) {
+  return num1 + num2;
 }
 
-const combinedAges = combine(20, 25, "as-number");
-console.log(combinedAges);
+function printResult(num: number) {
+  console.log("result: ", num);
+}
+
+let combinedValues: (a: number, b: number) => number;
+combinedValues = add;
+// combinedValues = printResult;
+
+console.log(combinedValues(16, 8));
