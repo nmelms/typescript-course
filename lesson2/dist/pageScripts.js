@@ -1,2 +1,2 @@
 "use strict";
-console.log("this is the page script ");
+console.log("this is the page scripts ");
