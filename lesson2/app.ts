@@ -1,4 +1,4 @@
 let userInput: unknown;
 
-userInput = "5";
+userInput = "five";
 userInput = 5;
