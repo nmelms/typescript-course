@@ -1,4 +1,9 @@
-let userInput: unknown;
+let button: HTMLElement | null = document.getElementById("button");
 
-userInput = "five";
-userInput = 5;
+const clickHandler = (message: string) => {
+  console.log(message)
+}
+
+if(button){
+    button.addEventListener("click", () => clickHandler('hello'));
+}

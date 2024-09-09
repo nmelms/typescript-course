@@ -1,4 +1,5 @@
 "use strict";
-let userInput;
-userInput = "five";
-userInput = 5;
+let button = document.getElementById("button");
+button === null || button === void 0 ? void 0 : button.addEventListener("click", () => {
+    console.log("clicksfdsafdsaf");
+});

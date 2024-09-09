@@ -1,1 +1,1 @@
-console.log("this is the page scripts ");
+console.log("this is the page scriptsss ");
