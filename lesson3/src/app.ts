@@ -1,5 +1,5 @@
 class Department {
-  constructor(public name: string) {}
+  constructor(public name: string, private readonly id: string) {}
   private employees: string[] = [];
 
   describe(this: Department) {
@@ -16,7 +16,14 @@ class Department {
   }
 }
 
-const HR = new Department("Human Resources");
+class ITDepartment extends Department {
+  constructor(id: string, public admins: string[]) {
+    super(id, "IT");
+  }
+}
+
+const HR = new Department("Human Resources", "d1");
+const IT = new ITDepartment("t1", ["nick", "kayla"]);
 HR.describe();
 HR.addEmployee("nick");
 HR.addEmployee("Kayla");
